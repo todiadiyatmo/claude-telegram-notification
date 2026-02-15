@@ -4,7 +4,13 @@ Telegram notification hook for Claude Code. Sends you a message when Claude need
 
 ## Setup
 
-### 1. Set environment variables
+
+### 1. Setup Telegram bot
+
+- **Bot token**: Message [@BotFather](https://t.me/BotFather) on Telegram, run `/newbot`, and copy the token
+- **Chat ID**: Message your bot, then open `https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates` in a browser — your chat ID is in `result[0].message.chat.id`
+
+### 2. Set environment variables
 
 Add these to your shell profile (`~/.zshrc`, `~/.bashrc`, etc.):
 
@@ -19,18 +25,7 @@ Source your shell profile (`~/.zshrc`, `~/.bashrc`, etc.)
 source ~/.zshrc
 ```
 
-**How to get these:**
-
-- **Bot token**: Message [@BotFather](https://t.me/BotFather) on Telegram, run `/newbot`, and copy the token
-- **Chat ID**: Message your bot, then open `https://api.telegram.org/bot<YOUR_TOKEN>/getUpdates` in a browser — your chat ID is in `result[0].message.chat.id`
-
-Reload your shell after adding:
-
-```bash
-source ~/.zshrc
-```
-
-### 2. Install
+### 3. Install
 
 ```bash
 npm install -g claude-tg-hook
@@ -46,7 +41,7 @@ npm link
 
 `npm link` symlinks the CLI into your global `node_modules`, so any edits to the source take effect immediately — no rebuild needed.
 
-### 3. Configure Claude Code hooks
+### 4. Configure Claude Code hooks
 
 Add to `~/.claude/settings.json`:
 
