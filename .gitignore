@@ -1,1 +1,31 @@
+# Dependencies
 node_modules/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test and build artifacts
+coverage/
+.nyc_output/
+dist/
+*.tgz
+
+# Local agent configuration
+.claude/settings.local.json
+.codex/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~

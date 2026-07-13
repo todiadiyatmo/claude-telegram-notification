@@ -1,7 +1,7 @@
 {
   "name": "claude-tg-hook",
   "version": "1.0.0",
-  "description": "Telegram notification hook for Claude Code",
+  "description": "Telegram notification hook for Claude Code and Codex",
   "type": "module",
   "bin": {
     "claude-tg-hook": "./bin/cli.js"
@@ -9,10 +9,14 @@
   "engines": {
     "node": ">=18"
   },
+  "scripts": {
+    "test": "node --test"
+  },
   "files": [
-    "bin"
+    "bin",
+    "lib"
   ],
-  "keywords": ["claude", "telegram", "hook", "notification"],
+  "keywords": ["claude", "codex", "telegram", "hook", "notification"],
   "author": "todiadiyatmo <t@tonjoo.id>",
   "license": "MIT"
 }
